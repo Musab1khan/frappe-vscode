@@ -16,7 +16,7 @@ export  function benchcommandsRunner(command: string, args: string | null = null
                 procData = proc.stdout.toString();
             }
             if (proc.stderr !== null && proc.stderr.toString() !== '') {
-                const procErr = proc.stderr.toString;
+                const procErr = proc.stderr.toString();
                 // MessageUtils.showErrorMessage("The '" + operation + "' process failed: " + procErr);
                 procData = procErr;
             }
