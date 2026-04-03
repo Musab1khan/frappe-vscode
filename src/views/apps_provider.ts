@@ -127,7 +127,7 @@ export class FrappeTreeViewProvider implements vscode.TreeDataProvider<CustomTre
             if (element.label === "Reports") {
                 const reports: FrappeReportTree[] = [];
                 for (const reportName in element.module.Reports) {
-                    const report = element.module.DocTypes[reportName];
+                    const report = element.module.Reports[reportName];
                     reports.push(new FrappeReportTree(reportName, report));
                 }
                 return reports;
